@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Team</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #ff6b6b, #f06595);
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: auto;
+}
+
+.team-section {
+    margin: 40px 0;
+}
+
+/* Other styles remain the same */
+
+.team-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #444;
+    font-size: 2em;
+    position: relative;
+    padding-bottom: 10px;
+    margin: 0 auto; /* Center the heading */
+}
+
+.team-section h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 80px;
+    height: 3px;
+    background-color: #ff6b6b;
+    border-radius: 5px;
+}
+
+/* Other styles remain the same */
+
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background: white;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+    border: 5px solid #ff6b6b;
+    transition: border-color 0.3s;
+}
+
+.team-member img:hover {
+    border-color: #f06595;
+}
+
+.team-member h3 {
+    color: #444;
+    margin-bottom: 5px;
+    font-size: 1.4em;
+    transition: color 0.3s;
+}
+
+.team-member p {
+    color: #777;
+    font-size: 1em;
+}
+
+.team-member:hover h3 {
+    color: #ff6b6b;
+}
+
+@media (max-width: 768px) {
+    .team-member {
+        width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .team-member {
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Welcome to Our Tech Innovators Team</h1>
+            <p>Our team consists of highly skilled professionals dedicated to achieving excellence in every project we undertake.</p>
+        </header>
+
+        <section class="team-section">
+            <h2>Leadership/Management Team</h2>
+            <div class="team">
+                <div class="team-member">
+                    <img src="boy.png" alt="Leader 1">
+                    <h3>John Doe</h3>
+                    <p>CEO</p>
+                </div>
+                <div class="team-member">
+                    <img src="girl.png" alt="Leader 2">
+                    <h3>Jane Smith</h3>
+                    <p>COO</p>
+                </div>
+                <div class="team-member">
+                    <img src="boy.png" alt="Leader 3">
+                    <h3>Emily Davis</h3>
+                    <p>CFO</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-section">
+            <h2>Development Team</h2>
+            <div class="team">
+                <div class="team-member">
+                    <img src="girl.png" alt="Developer 1">
+                    <h3>Michael Brown</h3>
+                    <p>Lead Developer</p>
+                </div>
+                <div class="team-member">
+                    <img src="girl.png" alt="Developer 2">
+                    <h3>Sarah Wilson</h3>
+                    <p>Senior Developer</p>
+                </div>
+                <div class="team-member">
+                    <img src="boy.png" alt="Developer 3">
+                    <h3>David Johnson</h3>
+                    <p>Junior Developer</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-section">
+            <h2>Sales and Marketing Team</h2>
+            <div class="team">
+                <div class="team-member">
+                    <img src="boy.png" alt="Sales 1">
+                    <h3>Linda Williams</h3>
+                    <p>Sales Manager</p>
+                </div>
+                <div class="team-member">
+                    <img src="boy.png" alt="Sales 2">
+                    <h3>James Miller</h3>
+                    <p>Marketing Strategist</p>
+                </div>
+                <div class="team-member">
+                    <img src="girl.png" alt="Sales 3">
+                    <h3>Patricia Anderson</h3>
+                    <p>Content Creator</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
